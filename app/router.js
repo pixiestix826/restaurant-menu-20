@@ -9,6 +9,10 @@ Router.map(function() {
   this.route('admin', function() {
     this.route('orders', function() {});
   });
+
+  this.route('menu', {
+    path: '/'
+  });
 });
 
 export default Router;
