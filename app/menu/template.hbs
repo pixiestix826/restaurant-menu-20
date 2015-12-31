@@ -7,6 +7,7 @@
         <ul>
           {{#each category.items as |menuItem|}}
             {{menu-item-result menuItem=menuItem}}
+            {{mdl-button class="add-to-btn" isRaised=true text='Add To Cart' isAccent=true}}
           {{/each}}
         </ul>
       </li>

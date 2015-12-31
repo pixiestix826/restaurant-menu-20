@@ -10,6 +10,7 @@
   margin-top: 10rem;
   margin-left: 5rem;
   list-style: none;
+  border-radius: 3px;
   background: white;
   color: black;
   box-shadow: 0 8px 6px -6px black;
@@ -40,4 +41,8 @@
 
 .new-form-sub {
   margin-top: 10px;
+}
+
+.add-to-btn {
+  float: right;
 }
