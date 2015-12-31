@@ -12,7 +12,6 @@
   list-style: none;
   background: white;
   color: black;
-  // border-radius: 6px;
   box-shadow: 0 8px 6px -6px black;
 }
 
@@ -23,12 +22,7 @@
 }
 
 .admin-btns {
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-  top: 30%;
-  left: 20%;
+  margin-left: 20px;
 }
 
 .order-detail {
@@ -38,6 +32,12 @@
 
 .new-form {
   background: white;
+  margin-top: 5px;
   width: 50%;
+  border-radius: 3px;
+  box-shadow: 0 8px 6px -6px black;
+}
 
+.new-form-sub {
+  margin-top: 10px;
 }
