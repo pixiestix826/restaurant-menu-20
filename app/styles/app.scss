@@ -2,14 +2,22 @@
 
 .layout-transparent {
   position: relative;
-  background: url('https://malcolmmclean.files.wordpress.com/2009/05/safranstreet.jpg') center / cover;
+  background: url('../img/safranstreet.jpg') center / cover;
 }
 
-.delivery-menu {
+.mdl-grid {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   margin-top: 10rem;
+  margin-left: 5rem;
   list-style: none;
+  background: white;
+  color: black;
+  // border-radius: 6px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.menu-header {
+  margin-top: 0;
+  padding: 6px;
+  border-bottom: 2px solid black;
 }

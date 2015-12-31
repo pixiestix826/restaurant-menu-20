@@ -1,28 +1,21 @@
-{{!-- <h2>
-  Menu</h2>
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--12-col white-text">
+    <h2 class="menu-header">Delivery Menu</h2>
+    {{#group-categories items=model class="menu" tagName="ul" as |category|}}
+      <li>
+        <h3>{{category.name}}</h3>
+        <ul>
+          {{#each category.items as |menuItem|}}
+            {{menu-item-result menuItem=menuItem}}
+          {{/each}}
+        </ul>
+      </li>
+    {{/group-categories}}
+  </div>
+</div>
 
-{{#group-categories items=model class="menu" tagName="ul" as |category|}}
-  <li>
-    <h3>{{category.name}}</h3>
-    <ul>
-      {{#each category.items as |menuItem|}}
-        {{menu-item-result menuItem=menuItem}}
-      {{/each}}
-    </ul>
-  </li>
-{{/group-categories}}
 
-{{#group-categories items=model class="menu" tagName="ul" as |category|}}
-  <li>
-    <h3>{{category.name}}</h3>
-    <ul>
-      {{#each category.items as |menuItem|}}
-        {{menu-item-result menuItem=menuItem}}
-      {{/each}}
-    </ul>
-  </li>
-{{/group-categories}} --}}
-<div class="delivery-menu">
+{{!-- <div class="delivery-menu">
   <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
     <thead>
       <tr>
@@ -103,4 +96,4 @@
       </tr>
     </tbody>
   </table>
-</div>
+</div> --}}
