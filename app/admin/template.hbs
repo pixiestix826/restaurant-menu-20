@@ -1,5 +1,9 @@
 <div class="admin-btns">
-  {{mdl-button isRaised=true text='Edit Menu' isAccent=true}}
-  {{mdl-button isRaised=true text='View Orders' isAccent=true}}
+  {{#link-to 'admin.menu-items.new'}}
+    {{mdl-button isRaised=true text='Edit Menu' isAccent=true}}
+  {{/link-to}}
+  {{#link-to 'admin.orders.index'}}
+    {{mdl-button isRaised=true text='View Orders' isAccent=true}}
+  {{/link-to}}
 </div>
 {{outlet}}
