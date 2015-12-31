@@ -1,5 +1,15 @@
 @import 'material-design-lite';
 
 .layout-transparent {
+  position: relative;
   background: url('https://malcolmmclean.files.wordpress.com/2009/05/safranstreet.jpg') center / cover;
+}
+
+.delivery-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 10rem;
+  list-style: none;
 }
