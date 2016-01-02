@@ -18,6 +18,10 @@ Router.map(function() {
   this.route('menu', {
     path: '/',
   });
+
+  this.route('models', function() {
+    this.route('order');
+  });
 });
 
 export default Router;
