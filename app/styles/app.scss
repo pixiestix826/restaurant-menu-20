@@ -31,7 +31,7 @@
   color: white;
 }
 
-.new-form, .edit-form {
+.new-form, .edit-form, .edit-menu-items {
   background: white;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -39,6 +39,7 @@
   width: 50%;
   border-radius: 3px;
   box-shadow: 0 8px 6px -6px black;
+  list-style: none;
 }
 
 .new-form-sub {
@@ -47,4 +48,8 @@
 
 .add-to-btn {
   float: right;
+}
+
+.edit-menu-items {
+  padding: 2px;
 }
