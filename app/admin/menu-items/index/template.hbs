@@ -2,6 +2,6 @@
 {{#each model as |value|}}
   <li class="edit-menu-items">
     {{value.name}}
-    {{link-to "Edit" "admin.menu-items.edit" value}}
+    {{link-to "Edit" "admin.menu-items.edit" value class="edit-link"}}
   </li>
 {{/each}}
