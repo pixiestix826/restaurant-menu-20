@@ -23,7 +23,7 @@
 }
 
 .admin-btns {
-  margin-left: 20px;
+  margin: 10px;
 }
 
 .order-detail {
@@ -33,16 +33,14 @@
 
 .new-form {
   background: white;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
   width: 50%;
   border-radius: 3px;
   box-shadow: 0 8px 6px -6px black;
 }
 
 .new-form-sub {
-  margin-top: 10px;
-}
-
-.add-to-btn {
-  float: right;
+  margin-left: 10px;
 }
