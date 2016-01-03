@@ -20,7 +20,9 @@ Router.map(function() {
   });
 
   this.route('models', function() {
-    this.route('order');
+    this.route('order', function() {
+      this.route('model');
+    });
   });
 });
 
