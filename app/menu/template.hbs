@@ -1,16 +1,15 @@
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--12-col white-text">
+
     <h2 class="menu-header">Delivery Menu</h2>
     {{#group-categories items=model class="menu" tagName="ul" as |category|}}
-      <li>
-        <h3>{{category.name}}</h3>
-        <ul>
+      <li class="category">
+        <h3 class="category-name">{{category.name}}</h3>
+        <ul class="item-description">
           {{#each category.items as |menuItem|}}
             {{menu-item-result menuItem=menuItem}}
-            {{mdl-button class="add-to-btn" isRaised=true text='Add To Cart' isAccent=true}}
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+              <i class="material-icons">add</i>
+            </button>
           {{/each}}
         </ul>
       </li>
     {{/group-categories}}
-  </div>
-</div>

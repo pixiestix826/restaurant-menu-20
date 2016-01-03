@@ -5,21 +5,19 @@
   background: url('../img/safranstreet.jpg') center / cover;
 }
 
-.mdl-grid {
-  position: absolute;
-  margin-top: 10rem;
-  margin-left: 5rem;
-  list-style: none;
-  border-radius: 3px;
-  background: white;
-  color: black;
-  box-shadow: 0 8px 6px -6px black;
-}
+// .mdl-grid {
+//   width: 60%;
+//   list-style: none;
+//   border-radius: 3px;
+//   background: white;
+//   color: black;
+//   box-shadow: 0 8px 6px -6px black;
+// }
 
 .menu-header {
   margin-top: 0;
   padding: 6px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #d2d9d5;
 }
 
 .admin-btns {
@@ -33,18 +31,20 @@
 
 .new-form, .edit-form, .edit-menu-items {
   background: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  margin: 10px;
   width: 50%;
   border-radius: 3px;
   box-shadow: 0 8px 6px -6px black;
   list-style: none;
 }
 
-.new-form-sub,
-.add-to-btn  {
+.new-form-sub {
   float: right;
+}
+
+.mdl-button--fab
+.material-icons {
+  width: 12px;
 }
 
 .edit-menu-items {
@@ -54,4 +54,20 @@
 .edit-link {
   float: right;
   margin-right: 2px;
+}
+
+.category-name,
+.item-description,
+.category {
+  border-bottom: 2px solid #d2d9d5;
+  list-style: none;
+}
+
+.item-description {
+  padding-left: 0;
+}
+
+.menu-item__name {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
