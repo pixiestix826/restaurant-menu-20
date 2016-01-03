@@ -1,17 +1,19 @@
-<h2 class="menu-header">Seasonal Menu</h2>
-{{#group-categories items=model class="menu" tagName="ul" as |category|}}
-  <li class="category">
-    <h3 class="category-name">{{category.name}}</h3>
-    <ul class="item-description">
-      {{#each category.items as |menuItem|}}
-        {{menu-item-result menuItem=menuItem}}
-        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-          <i class="material-icons">add</i>
-        </button>
-      {{/each}}
-    </ul>
-  </li>
-{{/group-categories}}
+<div class="main-menu">
+  <h2 class="menu-header">Seasonal Menu</h2>
+  {{#group-categories items=model class="menu" tagName="ul" as |category|}}
+    <li class="category">
+      <h3 class="category-name">{{category.name}}</h3>
+      <ul class="item-description">
+        {{#each category.items as |menuItem|}}
+          {{menu-item-result menuItem=menuItem}}
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">add</i>
+          </button>
+        {{/each}}
+      </ul>
+    </li>
+  {{/group-categories}}
+</div>
 
 <div class="order-sidebar">
   <h3>Your Order</h3>
