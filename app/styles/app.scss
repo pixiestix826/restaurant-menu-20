@@ -5,14 +5,15 @@
   background: url('../img/safranstreet.jpg') center / cover;
 }
 
-// .mdl-grid {
-//   width: 60%;
-//   list-style: none;
-//   border-radius: 3px;
-//   background: white;
-//   color: black;
-//   box-shadow: 0 8px 6px -6px black;
-// }
+.page-content {
+  width: 50%;
+  margin-left: 20px;
+  list-style: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  box-shadow: 0 8px 6px -6px black;
+}
 
 .menu-header {
   margin-top: 0;
@@ -56,18 +57,22 @@
   margin-right: 2px;
 }
 
-.category-name,
-.item-description,
-.category {
+.category-name {
   border-bottom: 2px solid #d2d9d5;
   list-style: none;
 }
 
-.item-description {
+.item-description,
+.category {
   padding-left: 0;
+  list-style: none;
 }
 
 .menu-item__name {
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+.menu {
+  padding: 10px;
 }
