@@ -1,14 +1,13 @@
 @import 'material-design-lite';
 
 .layout-transparent {
-  position: relative;
   background: url('../img/safranstreet.jpg') center / cover;
 }
 
 // Main menu
-
-.page-content {
-  width: 50%;
+.main-menu {
+  float: left;
+  width: 60%;
   margin-left: 20px;
   list-style: none;
   border-radius: 3px;
@@ -33,7 +32,8 @@
   color: white;
 }
 
-.new-form, .edit-form, .edit-menu-items {
+.new-form, .edit-form,
+.edit-menu-items  {
   background: white;
   margin: 10px;
   width: 50%;
@@ -79,11 +79,18 @@
 // Sidebar styling
 .order-sidebar {
   float: right;
-  width: 40%;
+  width: 30%;
   padding: 10px;
+  margin-right: 20px;
   border: 2px solid #d2d9d5;
   border-radius: 3px;
   background: white;
   color: black;
   box-shadow: 0 8px 6px -6px black;
+}
+.order-heading,
+.order-detail-heading {
+  margin-top: 0;
+  padding: 0;
+  border-bottom: 2px solid #d2d9d5;
 }
