@@ -10,6 +10,7 @@
   width: 60%;
   margin-left: 20px;
   list-style: none;
+  border: 2px solid #d2d9d5;
   border-radius: 3px;
   background: white;
   color: black;
@@ -29,11 +30,10 @@
 
 .order-detail {
   padding: 10px;
-  color: white;
 }
 
 .new-form, .edit-form,
-.edit-menu-items  {
+.edit-menu-items, .order-detail  {
   background: white;
   margin: 10px;
   width: 50%;
