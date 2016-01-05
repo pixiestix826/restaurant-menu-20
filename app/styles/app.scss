@@ -7,7 +7,7 @@
 // Main menu
 .main-menu {
   float: left;
-  width: 60%;
+  width: 50%;
   margin-left: 20px;
   list-style: none;
   border: 2px solid #d2d9d5;
@@ -26,6 +26,10 @@
 // Admin page
 .admin-btns {
   margin: 10px;
+}
+
+.mdl-button {
+  margin: 5px;
 }
 
 .order-detail {
