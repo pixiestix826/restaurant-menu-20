@@ -1,0 +1,38 @@
+<div class="main-menu">
+  <h2 class="menu-header">Seasonal Menu</h2>
+  {{#group-categories items=model class="menu" tagName="ul" as |category|}}
+    <li class="category">
+      <h3 class="category-name">{{category.name}}</h3>
+      <ul class="item-description">
+        {{#each category.items as |menuItem|}}
+          {{menu-item-result menuItem=menuItem}}
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">add</i>
+          </button>
+        {{/each}}
+      </ul>
+    </li>
+  {{/group-categories}}
+</div>
+
+<div class="order-sidebar">
+  <h3 class="order-heading">Your Order</h3>
+  <h4 class="order-detail-heading">Order Details</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td class="menu-item__name">{{menuItem.name}}</td>
+        <td class="menu-item__description">{{menuItem.description}}</td>
+        <td class="menu-item__price">{{menuItem.price}}</td>
+      </tr>
+    </thead>
+  </table>
+  <h4>Total</h4>
+  <P>{{order.total}}</P>
+  {{mdl-button class="new-order-sub" isRaised=true text='Submit' isAccent=true}}
+</div>

@@ -1,1 +1,100 @@
 @import 'material-design-lite';
+
+.layout-transparent {
+  background: url('../img/safranstreet.jpg') center / cover;
+}
+
+// Main menu
+.main-menu {
+  float: left;
+  width: 50%;
+  margin-left: 20px;
+  list-style: none;
+  border: 2px solid #d2d9d5;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.menu-header {
+  margin-top: 0;
+  padding: 6px;
+  border-bottom: 2px solid #d2d9d5;
+}
+
+// Admin page
+.admin-btns {
+  margin: 10px;
+}
+
+.mdl-button {
+  margin: 5px;
+}
+
+.order-detail {
+  padding: 10px;
+}
+
+.new-form, .edit-form,
+.edit-menu-items, .order-detail  {
+  background: white;
+  margin: 10px;
+  width: 50%;
+  border-radius: 3px;
+  box-shadow: 0 8px 6px -6px black;
+  list-style: none;
+}
+
+.new-form-sub {
+  float: right;
+}
+
+.edit-menu-items {
+  padding: 2px;
+}
+
+.edit-link {
+  float: right;
+  margin-right: 2px;
+}
+
+// Menu items
+.category-name {
+  border-bottom: 2px solid #d2d9d5;
+  list-style: none;
+}
+
+.item-description,
+.category {
+  padding-left: 0;
+  list-style: none;
+}
+
+.menu-item__name {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.menu {
+  padding: 10px;
+}
+
+// Sidebar styling
+.order-sidebar {
+  float: right;
+  width: 30%;
+  padding: 10px;
+  margin-right: 20px;
+  border: 2px solid #d2d9d5;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  box-shadow: 0 8px 6px -6px black;
+}
+.order-heading,
+.order-detail-heading {
+  margin-top: 0;
+  padding: 0;
+  border-bottom: 2px solid #d2d9d5;
+}

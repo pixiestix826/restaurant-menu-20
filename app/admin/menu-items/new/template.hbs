@@ -1,0 +1,8 @@
+{{#simple-form class="new-form" onsubmit="addItem" as |formValues|}}
+ {{mdl-textfield value=formValues.name name="name" class="name" label="Name"}}
+ {{mdl-textfield value=formValues.description name="description" class="description" label="Description"}}
+ {{mdl-textfield value=formValues.category name="category" class="category" label="Category"}}
+ {{mdl-textfield value=formValues.price name="price" class="price" label="Price"}}
+
+ {{mdl-button class="new-form-sub" isRaised=true text='Submit' isAccent=true}}
+{{/simple-form}}
