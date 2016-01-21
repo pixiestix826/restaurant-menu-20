@@ -1,1 +1,15 @@
-{{yield}}
+<h3 class="order-heading">Your Order</h3>
+<h4 class="order-detail-heading">Order Details</h4>
+<tableclass="order-sidebar">
+  {{#each cart.order.items as |orderItem|}}
+  <thead>
+    <tr>
+      <td class="menu-item__name">Item: {{orderItem.menuItem.name}}</td>
+      <td class="menu-item__description">Quantity: {{orderItem.menuItem.description}}</td>
+      <td class="menu-item__price">Price: {{orderItem.menuItem.price}}</td>
+    </tr>
+  </thead>
+</table>
+<h4>Total</h4>
+<P>{{cart.order.total}}</P>
+{{mdl-button class="new-order-sub" isRaised=true text='Submit' isAccent=true}}
