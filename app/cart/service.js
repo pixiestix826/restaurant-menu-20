@@ -45,15 +45,30 @@ export default Ember.Service.extend({
       orderItem.incrementProperty('quantity', 1);
     } else {
       // Create a new order item for the current order
-      let orderItem = this.get('store').createRecord('order-item', {menuItem: itemToAdd, quantity: 1});
+      let orderItem = this.get('store').createRecord('order-item', {
+        menuItem: itemToAdd,
+        quantity: 1,
+      });
       this.get('order-items').addObject(orderItem);
     }
+
     this.get('order').recomputeTotal();
   },
 
   sendOrder() {
+    let order = this.get('order');
+
     // Save the order
-    // Then Save all order items
-    // Then this.newOrder()
+    order.save().then(() => {
+      // Then Save all order items
+      let orderItemsAreSaving = order.get('items').map((orderItem) => {
+        return orderItem.save();
+      });
+
+      return Ember.RSVP.all(orderItemsAreSaving);
+    }).then(() => {
+      // Then this.newOrder()
+      this.newOrder();
+    });
   },
 });
