@@ -1,7 +1,10 @@
-<span class="menu-item__name">{{menuItem.name}}</span>
-<span class="menu-item__description">{{menuItem.description}}</span>
-<span class="menu-item__price">{{menuItem.price}}</span>
-{{!-- <button class="add-cart"{{action "addToCart" menuItem}}>Add to Cart</button> --}}
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" {{action "addToCart" menuItem}}>
-  <i class="material-icons">add</i>
-</button>
+<div class="">
+  <span class="menu-item__name">{{menuItem.name}}</span>
+  <span class="menu-item__description">{{menuItem.description}}</span>
+  <span class="menu-item__price">{{menuItem.price}}</span>
+</div>
+{{!-- <button class="add-cart"{{action "addToCart" menuItem}}
+>Add to Cart</button> --}}
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" {{action "addToCart" menuItem}}>
+    <i class="material-icons">add</i>
+  </button>
