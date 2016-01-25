@@ -1,4 +1,4 @@
-<h2>Cart</h2>
+{{!-- <h2>Cart</h2>
 <table class="order-sidebar">
   {{#each cart.order.items as |orderItem|}}
   <tr>
@@ -12,23 +12,26 @@
     <td></td>
     <td>Total: {{cart.order.totalPrice}}</td>
   </tr>
-</table>
+</table> --}}
 
-{{!-- <div class="order-sidebar">
+<div class="order-sidebar">
   <h3 class="order-heading">Your Order</h3>
   <h4 class="order-detail-heading">Order Details</h4>
   <table>
-    {{#each cart.order.items as |orderItem|}}
       <thead>
+        <th>Item:</th>
+        <th>Quantity:</th>
+        <th>Price:</th>
+    {{#each cart.order.items as |orderItem|}}
         <tr>
-          <td class="menu-item__name">Item: {{orderItem.menuItem.name}}</td>
-          <td class="menu-item__description">Quantity: {{orderItem.menuItem.description}}</td>
-          <td class="menu-item__price">Price: {{orderItem.menuItem.price}}</td>
+          <td class="menu-item__name">{{orderItem.menuItem.name}}</td>
+          <td class="menu-item__description">{{orderItem.quantity}}</td>
+          <td class="menu-item__price">${{orderItem.menuItem.price}}</td>
         </tr>
-      </thead>
     {{/each}}
+      </thead>
   </table>
   <h4>Total</h4>
-  <P>{{cart.order.total}}</P>
+  <td>${{cart.order.totalPrice}}</td>
   {{mdl-button class="new-order-sub" isRaised=true text='Submit' isAccent=true}}
-</div> --}}
+</div>
