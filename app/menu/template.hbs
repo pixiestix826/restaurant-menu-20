@@ -6,9 +6,6 @@
       <ul class="item-description">
         {{#each category.items as |menuItem|}}
           {{menu-item-result menuItem=menuItem}}
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" {{action "addToCart" menuItem}}>
-            <i class="material-icons">add</i>
-          </button>
         {{/each}}
       </ul>
     </li>
