@@ -45,10 +45,7 @@ export default Ember.Service.extend({
       orderItem.incrementProperty('quantity', 1);
     } else {
       // Create a new order item for the current order
-      let orderItem = this.get('store').createRecord('order-item', {
-        menuItem: itemToAdd,
-        quantity: 1,
-      });
+      let orderItem = this.get('store').createRecord('order-item', { menuItem: itemToAdd, quantity: 1, });
       this.get('order-items').addObject(orderItem);
     }
 
