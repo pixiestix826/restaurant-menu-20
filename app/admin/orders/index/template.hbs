@@ -1,21 +1,11 @@
 <div class="order-detail">
-  <div class="order-detail__total">$12.00</div>
-  <div class="order-detail-order-item">
-    <div class="order-detail-order-item__name">Lobster Bisque En Croûte</div>
-  </div>
-  <div class="order-detail-order-item"></div>
-</div>
-<div class="order-detail">
-  <div class="order-detail__total">$10.00</div>
-  <div class="order-detail-order-item">
-    <div class="order-detail-order-item__name">Escargots De Bourgogne</div>
-  </div>
-  <div class="order-detail-order-item"></div>
-</div>
-<div class="order-detail">
-  <div class="order-detail__total">$6.00</div>
-  <div class="order-detail-order-item">
-    <div class="order-detail-order-item__name">Red Red Wine</div>
-  </div>
-  <div class="order-detail-order-item"></div>
+  {{#each model as |orders|}}
+    <li>
+      <div class="order-detail__total">{{order.total}}</div>
+      <div class="order-detail-order-item">
+        <div class="order-detail-order-item__name">{{order.name}}</div>
+      </div>
+      {{link-to "Index" "admin.orders" value class="orders-list"}}
+    </li>
+  {{/each}}
 </div>
